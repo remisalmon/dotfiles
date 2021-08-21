@@ -1,0 +1,5 @@
+[Desktop Entry]
+Name=Syncthing
+Exec=syncthing -logfile=default
+Icon=/home/remi/Applications/Syncthing/logo-256.png
+Type=Application

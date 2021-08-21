@@ -1,0 +1,7 @@
+include "/home/remi/Work/GitHub/nanorc/*.nanorc"
+
+set autoindent
+set indicator
+set linenumbers
+set tabsize 2
+set tabstospaces
