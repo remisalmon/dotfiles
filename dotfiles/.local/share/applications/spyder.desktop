@@ -1,0 +1,5 @@
+[Desktop Entry]
+Name=Spyder
+Exec=/home/remi/Applications/Miniconda/envs/spyder/bin/spyder
+Icon=/home/remi/Applications/Miniconda/envs/spyder/share/icons/spyder.png
+Type=Application

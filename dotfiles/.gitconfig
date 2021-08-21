@@ -1,0 +1,7 @@
+[user]
+    name = Remi Salmon
+    email = salmon.remi@gmail.com
+[core]
+    editor = nano
+[merge]
+    tool = meld
