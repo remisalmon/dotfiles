@@ -17,10 +17,10 @@ source env.fish
 for dotfile in $dotfiles
     set path (string replace ~ '' (dirname $dotfile))
 
-    if test $argv[1] = 'backup'
-        mkdir -p dotfiles$path
-        cp -i -p -v $dotfile dotfiles$path
-    else if test $argv[1] = 'restore'
-        cp -i -p -v dotfiles$path/(basename $dotfile) $dotfile
+    if test $argv[1] = 'backup' && test -e $dotfile
+        mkdir -p dotfiles{$path}
+        cp -i -p -v $dotfile dotfiles{$path}
+    else if test $argv[1] = 'restore' && test -e ~/{$path}
+        cp -i -p -v dotfiles{$path}/(basename $dotfile) $dotfile
     end
 end
