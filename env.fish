@@ -7,12 +7,16 @@ set dotfiles \
     ~/.condarc \
     # restic
     ~/.resticignore \
+    # tmux
+    ~/.tmux.conf \
     # fish
     ~/.config/fish/config.fish \
     # terminator
     ~/.config/terminator/config \
     # bpytop
     ~/.config/bpytop/bpytop.conf \
+    # alacritty
+    ~/.config/alacritty/alacritty.yml \
     # desktop
     ~/.local/share/applications/spyder.desktop \
     ~/.local/share/applications/syncthing.desktop \
