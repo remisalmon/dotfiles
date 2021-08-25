@@ -15,7 +15,7 @@ end
 source env.fish
 
 for dotfile in $dotfiles
-    set path (string replace ~ '' (dirname $dotfile))
+    set path (string split -f 2 ~ (dirname $dotfile))
 
     if test $argv[1] = 'backup' && test -e $dotfile
         mkdir -p dotfiles{$path}
