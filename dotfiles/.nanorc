@@ -1,0 +1,10 @@
+include "/opt/local/share/nano/*.nanorc"
+include "/Users/remisalmon/Work/GitHub/nanorc/*.nanorc"
+
+set autoindent
+set indicator
+set linenumbers
+#set nohelp
+#set minibar
+set tabsize 2
+set tabstospaces
