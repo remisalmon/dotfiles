@@ -1,0 +1,28 @@
+{
+    "*.go": {
+        "tabstospaces": false
+    },
+    "*.tf": {
+        "tabsize": 2
+    },
+    "*.tfvars": {
+        "tabsize": 2
+    },
+    "*.yaml": {
+        "tabsize": 2
+    },
+    "*.yml": {
+        "tabsize": 2
+    },
+    "autoclose": false,
+    "basename": true,
+    "colorscheme": "remi",
+    "hltrailingws": true,
+    "linter": false,
+    "matchbracestyle": "highlight",
+    "mouse": false,
+    "rmtrailingws": true,
+    "scrollbar": true,
+    "tabstospaces": true,
+    "wordwrap": true
+}
