@@ -1,0 +1,62 @@
+window:
+  startup_mode: Maximized
+  dynamic_title: false
+
+scrolling:
+  history: 10000
+
+font:
+  normal:
+    family: Menlo
+  size: 12
+
+draw_bold_text_with_bright_colors: false
+
+colors:
+  primary:
+    background: "#19232d"
+    foreground: "#ffffff"
+  search:
+    matches:
+      background: "#54687a"
+      foreground: "#ffffff"
+    focused_match:
+      background: "#1a72bb"
+      foreground: "#ffffff"
+  footer_bar:
+    background: "#3a424a"
+    foreground: "#ffffff"
+  selection:
+    text: "#ffffff"
+    background: "#1a72bb"
+  normal:
+    black:   "#19232d"
+    red:     "#ee6772"
+    green:   "#b0e686"
+    yellow:  "#faed5c"
+    blue:    "#57d6e4"
+    magenta: "#c670e0"
+    cyan:    "#57d6e4"
+    white:   "#ffffff"
+  bright:
+    black:   "#3a424a"
+    red:     "#ee6772"
+    green:   "#b0e686"
+    yellow:  "#faed5c"
+    blue:    "#57d6e4"
+    magenta: "#c670e0"
+    cyan:    "#57d6e4"
+    white:   "#ffffff"
+
+selection:
+  semantic_escape_chars: " \t\"',;:<>(){}[]|"
+  save_to_clipboard: true
+
+cursor:
+  shape: Block
+  blinking: Off
+
+shell:
+  program: /opt/local/bin/fish
+
+working_directory: None

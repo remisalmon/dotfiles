@@ -1,0 +1,6 @@
+[flake8]
+extend-exclude = *venv,repos,.terraform
+extend-ignore = E1,E2,E3,E4,E5,E7,W
+indent-size = 4
+max-line-length = 88
+require-plugins = flake8-bugbear

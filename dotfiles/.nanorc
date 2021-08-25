@@ -1,0 +1,15 @@
+include "/opt/local/share/nano/*.nanorc"
+include "/Users/remisalmon/Work/GitHub/remisalmon/nanorc/*.nanorc"
+
+set afterends
+set atblanks
+set autoindent
+set indicator
+set linenumbers
+#set nohelp
+set minibar
+#set mouse
+#set multibuffer
+set softwrap
+set tabsize 4
+#set tabstospaces

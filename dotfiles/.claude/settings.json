@@ -1,0 +1,17 @@
+{
+  "model": "claude-sonnet-5",
+  "permissions": {
+    "allow": [
+      "Read(./**)",
+      "Edit(./**)",
+      "Bash(git *)",
+      "Bash(terraform validate *)"
+    ],
+    "defaultMode": "dontAsk",
+    "deny": [
+      "Bash(git clean *)",
+      "Bash(git push *)"
+    ]
+  },
+  "theme": "auto"
+}
