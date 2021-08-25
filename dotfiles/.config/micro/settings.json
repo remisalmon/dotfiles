@@ -1,0 +1,30 @@
+{
+  "ft:go": {
+    "tabstospaces": false
+  },
+  "ft:json": {
+    "tabsize": 2
+  },
+  "ft:terraform": {
+    "tabsize": 2
+  },
+  "ft:yaml": {
+    "tabsize": 2
+  },
+  "autoclose": false,
+  "basename": true,
+  "colorscheme": "spyder",
+  "diff": false,
+  "diffgutter": false,
+  "hltrailingws": true,
+  "keepautoindent": true,
+  "linter": false,
+  "matchbracestyle": "highlight",
+  "mouse": false,
+  "rmtrailingws": true,
+  "scrollbar": true,
+  "scrollbarchar": " ",
+  "tabsize": 4,
+  "tabstospaces": true,
+  "wordwrap": true
+}
