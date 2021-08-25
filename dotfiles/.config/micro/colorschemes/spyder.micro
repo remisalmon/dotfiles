@@ -1,0 +1,19 @@
+# text
+color-link default "#dfe1e2" # normal
+color-link comment "#999999" # comment
+color-link constant.string "#b0e686" # string
+color-link constant "#faed5c" # number
+color-link special "#c670e0" # keyword
+color-link statement "#fab16c" # builtin
+color-link identifier "#57d6e4" # definition
+color-link type "#ee6772" # instance
+
+color-link current-line-number "#dfe1e2" # normal
+color-link line-number "#999999" # comment
+color-link scrollbar "#dfe1e2,#dfe1e2" # normal,normal
+
+# highlight
+color-link cursor-line "#3a424a" # current line
+color-link match-brace "#dfe1e2,#0bbe0b" # normal,matched parens
+color-link selection "#dfe1e2,#1a72bb" # normal,occurence
+color-link trailingws "#ff4340" # unmatched parens

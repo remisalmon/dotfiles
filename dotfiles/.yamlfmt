@@ -1,0 +1,7 @@
+formatter:
+  type: basic
+  retain_line_breaks_single: true
+  indentless_arrays: false
+  trim_trailing_whitespace: true
+  eof_newline: true
+  force_quote_style: double
