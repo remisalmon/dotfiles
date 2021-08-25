@@ -1,0 +1,41 @@
+[sqlfluff]
+dialect = snowflake
+#templater = dbt
+templater = placeholder
+rules = aliasing, ambiguous, capitalisation, convention, jinja, structure
+exclude_rules =
+  aliasing.length,
+  aliasing.forbid,
+  convention.blocked_words,
+  structure.else_null,
+  structure.subquery,
+  structure.column_order
+large_file_skip_byte_limit = 0
+
+#[sqlfluff:templater:dbt]
+#target = cicd
+[sqlfluff:templater:placeholder]
+param_style = percent
+
+[sqlfluff:indentation]
+indent_unit = space
+tab_space_size = 4
+indented_joins = False
+indented_ctes = False
+indented_using_on = True
+indented_on_contents = False
+indented_then = False
+indented_then_contents = False
+allow_implicit_indents = False
+template_blocks_indent = False
+
+[sqlfluff:rules:capitalisation.keywords]
+capitalisation_policy = lower
+[sqlfluff:rules:capitalisation.identifiers]
+capitalisation_policy = lower
+[sqlfluff:rules:capitalisation.functions]
+extended_capitalisation_policy = lower
+[sqlfluff:rules:capitalisation.literals]
+capitalisation_policy = lower
+[sqlfluff:rules:capitalisation.types]
+extended_capitalisation_policy = lower

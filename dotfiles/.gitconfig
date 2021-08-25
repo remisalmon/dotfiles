@@ -1,0 +1,13 @@
+[user]
+    name = Remi Salmon
+    email = salmon.remi@gmail.com
+[core]
+    editor = nano
+[merge]
+    tool = meld
+[difftool]
+    prompt = false
+[mergetool]
+    prompt = false
+[mergetool "meld"]
+    path = /Applications/Meld.app/Contents/MacOS/Meld
