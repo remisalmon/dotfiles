@@ -1,0 +1,34 @@
+{
+  "autoclose": false,
+  "basename": true,
+  "colorscheme": "simple",
+  "diff": false,
+  "ft:go": {
+    "tabstospaces": false
+  },
+  "ft:json": {
+    "tabsize": 2
+  },
+  "ft:terraform": {
+    "tabsize": 2
+  },
+  "ft:yaml": {
+    "tabsize": 2
+  },
+  "ftoptions": false,
+  "hltrailingws": true,
+  "keepautoindent": true,
+  "linter": false,
+  "literate": false,
+  "matchbracestyle": "highlight",
+  "mouse": false,
+  "rmtrailingws": true,
+  "scrollbar": true,
+  "scrollbarchar": " ",
+  "showchars": "itab=|,ispace=|",
+  "status": false,
+  "statusformatl": "$(filename) $(modified)",
+  "statusformatr": "",
+  "tabstospaces": true,
+  "wordwrap": true
+}
