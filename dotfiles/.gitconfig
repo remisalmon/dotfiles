@@ -1,0 +1,17 @@
+[user]
+    name = Remi Salmon
+    email = salmon.remi@gmail.com
+[core]
+    editor = micro
+[diff]
+    tool = meld
+[merge]
+    tool = meld
+[difftool]
+    prompt = true
+[difftool "meld"]
+    path = /Applications/Meld.app/Contents/MacOS/Meld
+[mergetool]
+    prompt = false
+[mergetool "meld"]
+    path = /Applications/Meld.app/Contents/MacOS/Meld

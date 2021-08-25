@@ -1,0 +1,23 @@
+{
+  "general": {
+    "disableAutoUpdate": true,
+    "disableUpdateNag": true
+  },
+  "output": {
+    "format": "text"
+  },
+  "privacy": {
+    "usageStatisticsEnabled": false
+  },
+  "context": {
+    "discoveryMaxDirs": 0
+  },
+  "tools": {
+    "allowed": []
+  },
+  "security": {
+    "auth": {
+      "selectedType": "oauth-personal"
+    }
+  }
+}

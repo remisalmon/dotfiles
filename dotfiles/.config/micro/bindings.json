@@ -1,0 +1,23 @@
+{
+  "Alt-/": "lua:comment.comment",
+  "Alt-Backspace": "DeleteWordLeft",
+  "Alt-Down": "CursorEnd",
+  "Alt-Up": "CursorStart",
+  "Alt-a": "SelectAll",
+  "Alt-c": "CommandMode",
+  "Alt-f": "SelectAll,command:textfilter buffer-formatter.fish",
+  "Alt-g": "SelectAll,command-edit:textfilter gemini ",
+  "Ctrl-Backspace": "DeleteWordLeft",
+  "Ctrl-Down": "ParagraphNext",
+  "Ctrl-Left": "WordLeft",
+  "Ctrl-Right": "WordRight",
+  "Ctrl-Up": "ParagraphPrevious",
+  "Ctrl-a": "StartOfLine",
+  "Ctrl-e": "EndOfLine",
+  "Ctrl-f": "FindLiteral",
+  "Ctrl-k": "CutLine",
+  "Ctrl-r": "command-edit:replace -l ",
+  "CtrlUnderscore": "lua:comment.comment",
+  "Shift-Ctrl-Down": "SelectToParagraphNext",
+  "Shift-Ctrl-Up": "SelectToParagraphPrevious"
+}

@@ -1,0 +1,9 @@
+*venv/
+__pycache__/
+GitHub/
+*.pyc
+*.pickle
+*.dmg
+*.pkg
+*.xip
+.DS_Store

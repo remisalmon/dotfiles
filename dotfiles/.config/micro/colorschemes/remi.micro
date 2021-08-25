@@ -1,0 +1,18 @@
+color-link comment "red"
+color-link identifier "magenta"
+color-link constant "yellow"
+color-link constant.string "green"
+color-link statement "blue"
+color-link symbol "white" # don't use
+color-link preproc "white" # don't use
+color-link type "yellow"
+color-link special "blue"
+color-link underlined "white" # don't use
+color-link error "white" # don't use
+color-link todo "white" # don't use
+color-link line-number "white"
+color-link current-line-number "white"
+color-link selection "white,black"
+color-link scrollbar "white,white"
+color-link match-brace "white,black"
+color-link trailingws "red"
