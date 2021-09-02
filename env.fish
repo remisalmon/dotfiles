@@ -1,4 +1,6 @@
 set dotfiles \
+    # env
+    ~/.env \
     # git
     ~/.gitconfig \
     # nano
