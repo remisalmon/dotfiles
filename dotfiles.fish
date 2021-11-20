@@ -1,9 +1,9 @@
 #!/usr/bin/env fish
 
-function diff
+function dotdiff
     if not test -e $argv[1]
     or not test -e $argv[2]
-        return
+        return 1
     end
 
     git diff --no-index $argv
@@ -18,28 +18,29 @@ or not contains $argv[1] 'backup' \
 end
 
 if test $argv[1] = 'clean'
-    if test -s dotfiles/
+    if test (ls -a dotfiles | wc -l) -gt 2
         rm -r -f -v dotfiles/.*
     end
-    exit
+
+    exit 0
 end
 
 source env.fish
 
 for dotfile in $dotfiles
-    set path (string split -f 2 ~ (dirname $dotfile))
-    set file (basename $dotfile)
+    set source $dotfile
+    set backup dotfiles(string split -f 2 ~ $dotfile)
 
     if test $argv[1] = 'backup'
-    and test -e $dotfile
-        diff dotfiles{$path}/{$file} $dotfile
-        mkdir -p dotfiles{$path}
-        cp -i -p -v $dotfile dotfiles{$path}
+    and test -e $source
+    and not dotdiff $backup $source
+        mkdir -p (dirname $backup)
+        cp -i -p -v $source $backup
 
     else if test $argv[1] = 'restore'
-    and test -e ~/{$path}
-    and test -e dotfiles{$path}/{$file}
-        diff $dotfile dotfiles{$path}/{$file}
-        cp -i -p -v dotfiles{$path}/{$file} $dotfile
+    and test -e $backup
+    and test -e (dirname $source)
+    and not dotdiff $source $backup
+        cp -i -p -v $backup $source
     end
 end
