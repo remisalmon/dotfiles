@@ -18,7 +18,7 @@ or not contains $argv[1] 'backup' \
 end
 
 if test $argv[1] = 'clean'
-    if test (ls -a dotfiles | wc -l) -gt 2
+    if test (ls -A dotfiles | count) -gt 0
         rm -r -f -v dotfiles/.*
     end
 
@@ -28,19 +28,18 @@ end
 source env.fish
 
 for dotfile in $dotfiles
-    set source $dotfile
-    set backup dotfiles(string split -f 2 ~ $dotfile)
+    set backupfile (string replace ~ dotfiles $dotfile)
 
     if test $argv[1] = 'backup'
-    and test -e $source
-    and not dotdiff $backup $source
-        mkdir -p (dirname $backup)
-        cp -i -p -v $source $backup
+    and test -e $dotfile
+    and not dotdiff $backupfile $dotfile
+        mkdir -p (dirname $backupfile)
+        cp -i -p -v $dotfile $backupfile
 
     else if test $argv[1] = 'restore'
-    and test -e $backup
-    and test -e (dirname $source)
-    and not dotdiff $source $backup
-        cp -i -p -v $backup $source
+    and test -e $backupfile
+    and test -e (dirname $dotfile)
+    and not dotdiff $dotfile $backupfile
+        cp -i -p -v $backupfile $dotfile
     end
 end
