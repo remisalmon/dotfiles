@@ -15,8 +15,9 @@ set dotfiles \
     ~/.config/terminator/config \
     # bpytop
     ~/.config/bpytop/bpytop.conf \
+    # btop
+    ~/.config/btop/btop.conf \
     # alacritty
     ~/.config/alacritty/alacritty.yml \
     # desktop
     ~/.local/share/applications/spyder.desktop \
-    ~/.local/share/applications/syncthing.desktop \
