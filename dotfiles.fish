@@ -9,37 +9,39 @@ function dotdiff
     git diff --no-index $argv
 end
 
-if test (count $argv) -eq 0
-or not contains $argv[1] 'backup' \
-                         'restore' \
-                         'clean'
-    echo 'usage: dotfiles.fish backup|restore|clean'
-    exit 1
-end
-
-if test $argv[1] = 'clean'
-    if test (ls -A dotfiles | count) -gt 0
-        rm -r -f -v dotfiles/.*
-    end
-
-    exit 0
-end
+cd (status dirname)
 
 source env.fish
 
-for dotfile in $dotfiles
-    set backupfile (string replace ~ dotfiles $dotfile)
+switch $argv[1]
+    case "backup"
+        for dotfile in $dotfiles
+            set backupfile (string replace ~ dotfiles $dotfile)
 
-    if test $argv[1] = 'backup'
-    and test -e $dotfile
-    and not dotdiff $backupfile $dotfile
-        mkdir -p (dirname $backupfile)
-        cp -i -p -v $dotfile $backupfile
+            if test -e $dotfile
+            and not dotdiff $backupfile $dotfile
+                mkdir -p (dirname $backupfile)
+                cp -i -p -v $dotfile $backupfile
+            end
+        end
 
-    else if test $argv[1] = 'restore'
-    and test -e $backupfile
-    and test -e (dirname $dotfile)
-    and not dotdiff $dotfile $backupfile
-        cp -i -p -v $backupfile $dotfile
-    end
+    case "restore"
+        for dotfile in $dotfiles
+            set backupfile (string replace ~ dotfiles $dotfile)
+
+            if test -e $backupfile
+            and test -e (dirname $dotfile)
+            and not dotdiff $dotfile $backupfile
+                cp -i -p -v $backupfile $dotfile
+            end
+        end
+
+    case "clean"
+        if test (ls -A dotfiles | count) -gt 0
+            rm -r -f -v dotfiles/.*
+        end
+
+    case "*"
+        echo "usage: dotfiles.fish backup|restore|clean"
+        exit 1
 end
