@@ -1,23 +1,27 @@
 set dotfiles \
-    # git
-    ~/.gitconfig \
-    # nano
-    ~/.nanorc \
-    # conda
-    ~/.condarc \
-    # restic
-    ~/.resticignore \
-    # tmux
-    ~/.tmux.conf \
-    # fish
-    ~/.config/fish/config.fish \
-    # terminator
-    ~/.config/terminator/config \
+    # alacritty
+    ~/.config/alacritty/alacritty.yml \
     # bpytop
     ~/.config/bpytop/bpytop.conf \
     # btop
     ~/.config/btop/btop.conf \
-    # alacritty
-    ~/.config/alacritty/alacritty.yml \
-    # desktop
+    # conda
+    ~/.condarc \
+    # fish
+    ~/.config/fish/config.fish \
+    # flake8
+    ~/.flake8 \
+    # git
+    ~/.gitconfig \
+    # kitty
+    ~/.config/kitty/kitty.conf \
+    # nano
+    ~/.nanorc \
+    # restic
+    ~/.resticignore \
+    # spyder
     ~/.local/share/applications/spyder.desktop \
+    # terminator
+    ~/.config/terminator/config \
+    # tmux
+    ~/.tmux.conf \
