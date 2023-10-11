@@ -30,8 +30,8 @@ switch $argv[1]
             set backupfile (string replace ~ dotfiles $dotfile)
 
             if test -e $backupfile
-            and test -e (dirname $dotfile)
             and not dotdiff $dotfile $backupfile
+                mkdir -p (dirname $dotfile)
                 cp -i -p -v $backupfile $dotfile
             end
         end
@@ -39,6 +39,7 @@ switch $argv[1]
     case "clean"
         if test (ls -A dotfiles | count) -gt 0
             rm -r -f -v dotfiles/.*
+            touch dotfiles/.empty
         end
 
     case "*"
