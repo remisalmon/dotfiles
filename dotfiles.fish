@@ -37,10 +37,8 @@ switch $argv[1]
         end
 
     case "clean"
-        if test (ls -A dotfiles | count) -gt 0
-            rm -r -f -v dotfiles/.*
-            touch dotfiles/.empty
-        end
+        rm -r -f -v dotfiles/.*
+        touch dotfiles/.empty
 
     case "*"
         echo "usage: dotfiles.fish backup|restore|clean"
