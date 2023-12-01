@@ -20,7 +20,9 @@ set dotfiles \
     # restic
     ~/.resticignore \
     # spyder
-    ~/.local/share/applications/spyder.desktop \
+    ~/.spyder-py3/template.py \
+    # sqlfluff
+    ~/.sqlfluff \
     # terminator
     ~/.config/terminator/config \
     # tmux
