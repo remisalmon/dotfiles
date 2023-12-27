@@ -21,6 +21,7 @@ set dotfiles \
     ~/.resticignore \
     # spyder
     ~/.spyder-py3/template.py \
+    ~/.config/spyder-py3/template.py \
     # sqlfluff
     ~/.sqlfluff \
     # terminator
