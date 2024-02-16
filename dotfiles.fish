@@ -41,6 +41,6 @@ switch $argv[1]
         touch dotfiles/.empty
 
     case "*"
-        echo "usage: dotfiles.fish backup|restore|clean"
+        echo "usage: "(status basename)" backup|restore|clean"
         exit 1
 end
