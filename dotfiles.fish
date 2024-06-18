@@ -1,12 +1,18 @@
 #!/usr/bin/env fish
 
-function dotdiff
-    if not test -e $argv[1]
-    or not test -e $argv[2]
-        return 1
+function dotcopy
+    set sourcefile $argv[1]
+    set destfile $argv[2]
+
+    if not test -e $sourcefile
+        return
+    else if test -e $destfile
+    and git diff --no-index $destfile $sourcefile
+        return
     end
 
-    git diff --no-index $argv
+    mkdir -p (dirname $destfile)
+    cp -i -p -v $sourcefile $destfile
 end
 
 cd (status dirname)
@@ -16,24 +22,12 @@ source env.fish
 switch $argv[1]
     case "backup"
         for dotfile in $dotfiles
-            set backupfile (string replace ~ dotfiles $dotfile)
-
-            if test -e $dotfile
-            and not dotdiff $backupfile $dotfile
-                mkdir -p (dirname $backupfile)
-                cp -i -p -v $dotfile $backupfile
-            end
+            dotcopy $dotfile (string replace ~ dotfiles $dotfile)
         end
 
     case "restore"
         for dotfile in $dotfiles
-            set backupfile (string replace ~ dotfiles $dotfile)
-
-            if test -e $backupfile
-            and not dotdiff $dotfile $backupfile
-                mkdir -p (dirname $dotfile)
-                cp -i -p -v $backupfile $dotfile
-            end
+            dotcopy (string replace ~ dotfiles $dotfile) $dotfile
         end
 
     case "clean"
