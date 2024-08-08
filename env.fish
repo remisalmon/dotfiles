@@ -28,3 +28,5 @@ set dotfiles \
     ~/.config/terminator/config \
     # tmux
     ~/.tmux.conf \
+    # yamlfmt
+    ~/.yamlfmt \
