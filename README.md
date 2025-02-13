@@ -1,10 +1,8 @@
 # dotfiles.fish
 
-A [fish](https://fishshell.com) script to backup and restore dotfiles with git.
+A [fish](https://fishshell.com) script to backup and restore dotfiles.
 
-Tested with fish 3.1.0.
-
-Do not try this at home.
+Do not try this at ~/.
 
 ```shell
 > ./dotfiles.fish

@@ -7,7 +7,7 @@ function dotcopy
     if not test -e $sourcefile
         return
     else if test -e $destfile
-    and git diff --no-index $destfile $sourcefile
+    and diff $destfile $sourcefile
         return
     end
 
