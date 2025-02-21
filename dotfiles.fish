@@ -5,9 +5,7 @@ function dotcopy
     set destfile $argv[2]
 
     if not test -e $sourcefile
-        return
-    else if test -e $destfile
-    and diff $destfile $sourcefile
+    or diff -N $destfile $sourcefile
         return
     end
 
