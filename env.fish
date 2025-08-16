@@ -17,6 +17,10 @@ set dotfiles \
     ~/.config/kitty/kitty.conf \
     # nano
     ~/.nanorc \
+    # micro
+    ~/.config/micro/settings.json \
+    ~/.config/micro/bindings.json \
+    ~/.config/micro/colorschemes/remi.micro \
     # restic
     ~/.resticignore \
     # spyder
