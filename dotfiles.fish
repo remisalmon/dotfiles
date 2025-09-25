@@ -5,7 +5,7 @@ function dotcopy
     set destfile $argv[2]
 
     if not test -e $sourcefile
-    or diff -N $destfile $sourcefile
+        or diff -N $destfile $sourcefile
         return
     end
 
@@ -18,17 +18,17 @@ cd (status dirname)
 source env.fish
 
 switch $argv[1]
-    case "backup"
+    case backup
         for dotfile in $dotfiles
             dotcopy $dotfile (string replace ~ dotfiles $dotfile)
         end
 
-    case "restore"
+    case restore
         for dotfile in $dotfiles
             dotcopy (string replace ~ dotfiles $dotfile) $dotfile
         end
 
-    case "clean"
+    case clean
         rm -r -f -v dotfiles/.*
         touch dotfiles/.empty
 
