@@ -9,7 +9,7 @@ function dotcopy
         return
     end
 
-    mkdir -p (dirname $destfile)
+    mkdir -p (path dirname $destfile)
     cp -i -p -v $sourcefile $destfile
 end
 
