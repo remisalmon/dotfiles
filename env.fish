@@ -11,6 +11,8 @@ set dotfiles \
     ~/.config/fish/config.fish \
     # flake8
     ~/.flake8 \
+    # gemini
+    ~/.gemini/settings.json \
     # git
     ~/.gitconfig \
     # kitty
