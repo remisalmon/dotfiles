@@ -1,0 +1,33 @@
+[global_config]
+  window_state = maximise
+  extra_styling = False
+  scroll_tabbar = True
+  homogeneous_tabbar = False
+  title_hide_sizetext = True
+  title_transmit_bg_color = "#ff4340"
+  title_receive_bg_color = "#179ae0"
+  title_inactive_fg_color = "#ffffff"
+  title_inactive_bg_color = "#222b35"
+  enabled_plugins = ,
+[keybindings]
+[profiles]
+  [[default]]
+    allow_bold = False
+    background_color = "#19232d"
+    cursor_color = "#ffffff"
+    foreground_color = "#ffffff"
+    scrollbar_position = hidden
+    palette = "#19232d:#ee6772:#b0e686:#faed5c:#57d6e4:#c670e0:#57d6e4:#999999:#222b35:#ee6772:#b0e686:#faed5c:#57d6e4:#c670e0:#57d6e4:#ffffff"
+    use_custom_command = True
+    custom_command = fish
+    copy_on_selection = True
+[layouts]
+  [[default]]
+    [[[window0]]]
+      type = Window
+      parent = ""
+    [[[child1]]]
+      type = Terminal
+      parent = window0
+      profile = default
+[plugins]

@@ -1,0 +1,17 @@
+# see https://github.com/micro-editor/micro/blob/master/runtime/help/colors.md
+color-link comment "brightblack"
+color-link identifier "brightcyan"
+color-link constant "brightyellow"
+color-link constant.string "brightgreen"
+color-link statement "brightred"
+color-link type "brightmagenta"
+color-link special "brightblue"
+
+color-link indent-char "brightblack"
+color-link line-number "brightblack"
+color-link current-line-number "normal"
+color-link cursor-line "black"
+
+color-link scrollbar "brightblack,brightblack"
+
+color-link trailingws "brightred"

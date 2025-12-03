@@ -1,0 +1,17 @@
+{
+  "general": {
+    "enableAutoUpdate": false,
+    "enableAutoUpdateNotification": false
+  },
+  "privacy": {
+    "usageStatisticsEnabled": false
+  },
+  "context": {
+    "discoveryMaxDirs": 0
+  },
+  "security": {
+    "auth": {
+      "selectedType": "oauth-personal"
+    }
+  }
+}
