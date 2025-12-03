@@ -1,0 +1,11 @@
+include "/home/remi/Work/GitHub/nanorc/*.nanorc"
+
+set afterends
+set atblanks
+set autoindent
+set indicator
+set linenumbers
+set minibar
+set softwrap
+set tabsize 4
+set tabstospaces

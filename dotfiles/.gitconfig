@@ -1,0 +1,13 @@
+[user]
+    name = Remi Salmon
+    email = salmon.remi@gmail.com
+[core]
+    editor = micro
+[diff]
+    tool = meld
+[merge]
+    tool = meld
+[difftool]
+    prompt = true
+[mergetool]
+    prompt = false
