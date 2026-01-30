@@ -22,7 +22,7 @@ set dotfiles \
     # micro
     ~/.config/micro/settings.json \
     ~/.config/micro/bindings.json \
-    ~/.config/micro/colorschemes/remi.micro \
+    ~/.config/micro/colorschemes/ \
     # restic
     ~/.resticignore \
     # spyder
