@@ -10,7 +10,7 @@ function dotcopy
     end
 
     mkdir -p (path dirname $destfile)
-    cp -i -p -v $sourcefile $destfile
+    cp -i -p -r -v $sourcefile $destfile
 end
 
 cd (status dirname)
