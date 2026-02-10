@@ -5,8 +5,13 @@ function dotcopy
     set destfile $argv[2]
 
     if not test -e $sourcefile
-        or diff -N $destfile $sourcefile
         return
+    end
+
+    if test -e $destfile
+        if diff $destfile $sourcefile
+            return
+        end
     end
 
     mkdir -p (path dirname $destfile)
@@ -34,5 +39,4 @@ switch $argv[1]
 
     case "*"
         echo "usage: "(status basename)" backup|restore|clean"
-        exit 1
 end
