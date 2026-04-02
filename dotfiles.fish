@@ -9,7 +9,7 @@ function dotcopy
     end
 
     if test -e $destfile
-        if diff $destfile $sourcefile
+        if diff -u $destfile $sourcefile
             return
         end
     end
