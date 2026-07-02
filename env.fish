@@ -17,6 +17,7 @@ set dotfiles \
     ~/.gitconfig \
     # kitty
     ~/.config/kitty/kitty.conf \
+    ~/.config/kitty/colors.conf \
     # nano
     ~/.nanorc \
     # micro
