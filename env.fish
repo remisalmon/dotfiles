@@ -5,6 +5,8 @@ set dotfiles \
     ~/.config/bpytop/bpytop.conf \
     # btop
     ~/.config/btop/btop.conf \
+    # claude
+    ~/.claude/settings.json \
     # conda
     ~/.condarc \
     # fish
